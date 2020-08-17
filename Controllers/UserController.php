@@ -13,7 +13,7 @@ class UserController extends Controller
     public function index() 
     {
     	$data = [
-    		'users' => User::all()
+    		'user' => User::find(1)
     	];
         $this->render('user.index',$data);
     }
